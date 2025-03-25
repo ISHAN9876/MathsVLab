@@ -1,0 +1,29 @@
+/* src/styles/theme.css */
+
+/* === Define CSS Variables === */
+:root {
+    --primary-color: #2563eb; /* Tailwind Blue-600 */
+    --secondary-color: #9333ea; /* Tailwind Purple-600 */
+    --background-color: #f9fafb; /* Tailwind Gray-50 */
+    --text-color: #1f2937; /* Tailwind Gray-900 */
+}
+
+/* Apply global theme */
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+/* Themed button */
+.btn-theme {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn-theme:hover {
+    background-color: var(--secondary-color);
+}

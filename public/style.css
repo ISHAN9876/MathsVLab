@@ -1,0 +1,39 @@
+/* public/styles.css */
+
+/* === Base Styles (Non-Tailwind) === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global body styles */
+body {
+    @apply bg-gray-100 text-gray-900 font-sans; /* Tailwind utility classes */
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Centered container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* === Tailwind-Based Classes (Optional) === */
+/* You can replace these with normal CSS if Tailwind is removed */
+.text-primary {
+    @apply text-blue-600 font-semibold; /* Tailwind utility */
+}
+
+.btn-primary {
+    @apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded; /* Tailwind button */
+}

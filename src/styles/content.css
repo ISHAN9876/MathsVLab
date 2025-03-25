@@ -1,0 +1,26 @@
+/* src/styles/content.css */
+
+/* Content container */
+.content-container {
+    @apply bg-white shadow-md rounded-lg p-6; /* Tailwind utility */
+}
+
+/* Title styling */
+.content-title {
+    @apply text-2xl font-bold mb-4 text-gray-800; /* Tailwind utility */
+}
+
+/* Paragraph styling */
+.content-paragraph {
+    @apply text-base text-gray-700 leading-relaxed mb-4; /* Tailwind utility */
+}
+
+/* Responsive styles (Tailwind auto handles responsiveness) */
+@media (max-width: 768px) {
+    .content-container {
+        @apply p-4; /* Tailwind utility */
+    }
+    .content-title {
+        @apply text-xl; /* Tailwind utility */
+    }
+}
